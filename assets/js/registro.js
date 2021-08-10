@@ -15,19 +15,19 @@ formRegistro.addEventListener("submit", (e) => {
 
     // Comprobación y alerts para los campos
     if(email.value == '') {
-        // aqui va la configuracion de un alert o span
+        alert("El campo email no puede estar vacío");
     }
     if(password.value == '') {
-        
+        alert("El campo password no puede estar vacío");
     }
     if(nombre.value == '') {
-        
+        alert("El campo nombre no puede estar vacío");
     }
     if(rol == 'Selecciona tu rol:') {
-        
+        alert("Seleccione su rol");
     }
     if(estado == 'Selecciona tu estado:') {
-        
+        alert("Seleccione su estado");
     }
 
     // Peticion fetch
@@ -49,6 +49,7 @@ formRegistro.addEventListener("submit", (e) => {
         }).then(function(response) {
             if (response.status = 200) {
                 alert("registro valido, ya puedes iniciar sesion");
+                location.href = "login.html";
             } else {
                 alert("Favor de hacer un registro valido");
             }

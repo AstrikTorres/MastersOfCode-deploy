@@ -10,13 +10,13 @@ form.addEventListener('submit', (e) => {
 
     // Comprobación y alerts para los campos
     if(presupuesto == '') {
-        // aqui va la configuracion de un alert o span
+        alert('Por favor seleccione el presupuesto');
     }
     if(titulo == '') {
-            
+        alert('Por favor introduzca el título'); 
     }
     if(descripcion == '') {
-            
+        alert('Por favor introduzca la descripción'); 
     }
 
     // Peticion fetch
@@ -35,6 +35,13 @@ form.addEventListener('submit', (e) => {
             headers: {
                 'Authorization': token,
                 'Content-Type': "application/json"
+            }
+        }).then(response => {
+            if (response.status = 200) {
+                alert('Solicitud añadida con exito');
+                location.reload();
+            } else {
+                alert('Error con el servidor, una disculpa');
             }
         })
     }

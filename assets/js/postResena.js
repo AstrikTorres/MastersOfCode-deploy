@@ -7,13 +7,13 @@ form.addEventListener('submit', (e) => {
 
     // Comprobación y alerts para los campos
     if(calificacion == undefined) {
-        // aqui va la configuracion de un alert o span
+        alert('Debe seleccionar una calificación');
     }
     if(resumen == '') {
-            
+        alert('Debe introducir un resumen');
     }
     if(opinion == '') {
-            
+        alert('Debe introducir una opinion');
     }
 
     // Peticion fetch
@@ -35,7 +35,12 @@ form.addEventListener('submit', (e) => {
             }
         })// Recarga la pagina
         .then(response => {
+            if (response.status = 200) {
+                alert('Reseña creada con exito');
                 location.reload();
+            } else {
+                alert('Error con el servidor, una disculpa');
+            }
         })
     }
 });

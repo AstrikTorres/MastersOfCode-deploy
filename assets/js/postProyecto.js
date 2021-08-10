@@ -12,16 +12,13 @@ formPublicar.addEventListener('submit', (e) => {
 
     // Comprobación y alerts para los campos
     if(categoria != 'Categoria:') {
-        // aqui va la configuracion de un alert o span
+        alert('Por favor selecciona una categoria');
     }
     if(titulo == '') {
-            
+        alert('Por favor introduce un título');
     }
     if(descripcion == '') {
-            
-    }
-    if(precio == '') {
-            
+        alert('Por favor introduce una descripción');
     }
 
     // Peticion fetch
@@ -42,6 +39,14 @@ formPublicar.addEventListener('submit', (e) => {
             headers: {
                 'Authorization': token,
                 'Content-Type': "application/json"
+            }
+        })// Recarga la pagina
+        .then(response => {
+            if (response.status = 200) {
+                alert('Prroyecto añadido con exito');
+                location.reload();
+            } else {
+                alert('Error con el servidor, una disculpa');
             }
         })
     }

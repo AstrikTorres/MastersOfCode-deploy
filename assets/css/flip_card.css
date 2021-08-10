@@ -1,0 +1,72 @@
+/* card flip animation */
+.flip-card {
+    background-color: transparent;
+    perspective: 3000px;
+    /* Genera un efecto 3D */
+    height: 200px;
+    width: 315px;
+    /* Es necesario una altura para que aparezca en la página */
+    border: 0px;
+    /*Elimina el borde predeterminado que tienen las tajetas en Bootstrap */
+  }
+  
+  /* Este contenedor nos posiciona los dos lados de la tarjeta */
+  .flip-card-inner {
+    position: relative;
+    /* dejamos que la grid de bootstrap posicione la tarjeta */
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    /* duracion de la animacion */
+    transform-style: preserve-3d;
+  }
+  
+  /* Crea la animación para girar la tarjeta de forma horizontal cuando el ratón se pone encima*/
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Estructura básica de las dos caras */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    /* necesario para posicionar las dos caras a la misma altura */
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    /* nos genera una sombra */
+    box-shadow: 10px 10px 28px -5px rgba(0, 0, 0, 0.3);
+    border-radius: 0.5rem;
+  }
+  
+  /* Estructura específica de la cara frontal */
+  .flip-card-front {
+    /* Ajusta la imagen al tamaño de la tarjeta para hacerla adaptable*/
+    /* Mascara para oscurecer la imagen y que se pueda ver el titulo */
+  }
+  
+  .flip-card-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+  }
+  
+
+  
+  .flip-card-front .mask .align-end {
+    position: absolute;
+    top: 85%;
+    left: 20px;
+    color: #fafafa;
+    font-size: 1.5em;
+  }
+  
+  /* Estructura específica de la cara trasera */
+  .flip-card-back {
+    transform: rotateY(180deg);
+  
+    /* Ajusta la altura del texto al centro de la tarjeta */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="assets/css/Animated-Filterable-Gallery.css">
+    <link rel="stylesheet" href="assets/css/Bootstrap-4---Photo-Gallery.css">
+    <link rel="stylesheet" href="assets/css/Brands.css">
+    <link rel="stylesheet" href="assets/css/cards.css">
+    <link rel="stylesheet" href="assets/css/Features-Boxed.css">
+    <link rel="stylesheet" href="assets/css/Footer-Basic.css">
+    <link rel="stylesheet" href="assets/css/Footer-Dark.css">
+    <link rel="stylesheet" href="assets/css/Footer-with-social-media-icons.css">
+    <link rel="stylesheet" href="assets/css/Hover-Effect-Style-Demo---2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/Lightbox-Gallery.css">
+    <link rel="stylesheet" href="assets/css/Ludens-Users---3-Profile.css">
+    <link rel="stylesheet" href="assets/css/Projects-Clean.css">
+    <link rel="stylesheet" href="assets/css/Recipe-Card.css">
+    <link rel="stylesheet" href="assets/css/Simple-Slider.css">
+    <link rel="stylesheet" href="assets/css/smoothproducts.css">
+    <link rel="stylesheet" href="assets/css/Social-Icons.css">
+    <link rel="stylesheet" href="assets/css/Timeline.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+	<link rel="stylesheet" href="/assets/css/portafolio.css">
+</head>
+<!-- navbar -->
+<nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark" id="mainNav">
+    <div class="container"><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+        <div class="collapse navbar-collapse" id="navbarResponsive"><a href="/index.html"><img src="assets/img/logoWhite.png" style="width: 125px;height: 50px;"></a>
+            <ul class="navbar-nav ml-auto text-uppercase">
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services"></a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/planes.html">planes</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/catalogo-proyectos.html">Proyectos</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/lista-blogs.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/equipo.html">Equipo</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/lista-trabajos.html">Trabajo Freelance</a></li>
+            </ul>
+        </div><button class="btn btn-primary" type="button" style="background: #FCA311;border-style: none;"><i class="fa fa-shopping-cart"></i></button><a class="js-scroll-trigger" href="#contact"></a><a class="js-scroll-trigger" href="#contact"></a><a class="js-scroll-trigger" href="#contact"></a>
+    </div>
+</nav>
+<!-- /navbar -->
+<!-- portafolio -->
+        <body>
+            <div class="contenedor" style="margin-top: 80px;">
+                <header>
+                    <div class="logo">
+                        <h1>BIENVENIDO</h1>
+                        <p">Portafolio de Luis Bucio</p>
+                    </div>
+                    <form action="">
+                        <input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar"><br><br>
+                    </form>
+
+                    
+
+
+                        <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" style="font-family: Montserrat, sans-serif;background: #FCA311">
+    AÑADIR PROYECTO
+  </button><br><br>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel" >AÑADIR PROYECTO</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <form id="formPublicar">
+                <div class="row">
+                <div class="form-group col-12"><input class="form-control" type="text" name="title" placeholder="Título del Proyecto" id="titulo"></div>
+
+                <div class="form-group col-12"><input class="form-control" type="text" name="description" placeholder="Describe el proyecto" id="descripcion"></div>
+
+                <div class="form-group col-12"><input class="form-control" type="text" name="imagen" id="imagen" placeholder="Url de tu imagen en internet"></div>
+
+                <div class="form-group col-12">
+                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" name="categoria">
+                        <option selected>Categoria:</option>
+                        <option value="Web">Web</option>
+                        <option value="Movil">Movil</option>
+                        <option value="Mockup">Mockup</option>
+                    </select>
+                </div>
+
+                <div class="form-group col-12">
+                    <label for="precio">Si quieres que este en venta, ponle precio</label>
+                    <input id="precio" class="form-control" type="number" name="precio" placeholder="Precio">
+                </div>
+                
+                <div class="form-group col-12">
+                <button type="submit" class="btn btn-block" style="font-family: Montserrat, sans-serif;background: #FCA311; color: white;">Guardar Cambios</button>
+                </div>
+                </div>
+            </form>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="categorias" id="categorias">
+    <a href="#" class="activo">Todos</a>
+    <a href="#">Desarrollo Web</a>
+    <a href="#">Desarrollo Móvil</a>
+    <a href="#">Mockups</a>
+    <a href="#">En venta</a>
+</div>
+
+            </header>
+        
+                <section class="grid" id="grid">
+                    <div class="item" 
+                         data-categoria="en venta"
+                         data-etiquetas="pagina web desarrollo responsivo"
+                         data-descripcion="Página web responsiva. Costo: $1400"
+                    >
+                        <div class="item-contenido">
+                            <img src="/assets/img/port1.png" alt="">
+                        </div>
+                    </div>
+        
+                    <div class="item"
+                         data-categoria="desarrollo móvil"
+                         data-etiquetas="pagina web desarrollo responsivo"
+                         data-descripcion="Página web responsiva"
+                    >
+                        <div class="item-contenido">
+                            <img src="assets/img/port2.png" alt="">
+                        </div>
+                    </div>
+        
+                    <div class="item"
+                         data-categoria="desarrollo móvil"
+                         data-etiquetas="app aplicacion android"
+                         data-descripcion="Aplicación Android"
+                    >
+                        <div class="item-contenido">
+                            <img src="assets/img/port3.png" alt="">
+                        </div>
+                    </div>
+        
+                    <div class="item"
+                         data-categoria="desarrollo web"
+                         data-etiquetas="pagina web landing page"
+                         data-descripcion="Página web responsiva"
+                    >
+                        <div class="item-contenido">
+                            <img src="assets/img/port4.png" alt="">
+                        </div>
+                    </div>
+        
+                    <div class="item"
+                         data-categoria="desarrollo web"
+                         data-etiquetas="app aplicacion móvil android ios"
+                         data-descripcion="Aplicación iOS"
+                    >
+                        <div class="item-contenido">
+                            <img src="assets/img/port5.png" alt="">
+                        </div>
+                    </div>
+        
+                    <div class="item"
+                         data-categoria="en venta"
+                         data-etiquetas="plantilla landing page desarrollo web"
+                         data-descripcion="Plantilla para landing page. Costo $1300"
+                        
+                    >
+                        <div class="item-contenido">
+                            <img src="assets/img/port6.png" alt="">
+                        </div>
+                    </div>
+        
+                    <div class="item"
+                         data-categoria="en venta"
+                         data-etiquetas="pagina web responsiva"
+                         data-descripcion="Página web responsiva. Costo $1700"
+                    >
+                        <div class="item-contenido">
+                            <img src="assets/img/port7.png" alt="">
+                        </div>
+                    </div>
+        
+                    <div class="item" 
+                         data-categoria="mockups"
+                         data-etiquetas="plantilla landing page desarrollo web"
+                         data-descripcion="Plantilla landing page"
+                    >
+                        <div class="item-contenido">
+                            <img src="assets/img/port8.png" alt="">
+                        </div>
+                    </div>
+        
+                    <div class="item"
+                         data-categoria="mockups"
+                         data-etiquetas="plantilla landing page productos"
+                         data-descripcion="Plantilla landing page productos"
+                             "
+                    >
+                        <div class="item-contenido">
+                            <img src="assets/img/port9.png" alt="">
+                        </div>
+                    </div>
+                </section>
+        
+                <section class="overlay" id="overlay">
+                    <div class="contenedor-img">
+                        <button id="btn-cerrar-popup"><i class="fas fa-times"></i></button>
+                        <img src="" alt="">
+                    </div>
+                    <p class="descripcion"></p>
+                </section>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <footer class="footer-basic" style="padding: 0px 0px;"></footer>
+        <div class="clean-block add-on social-icons" style="padding: 0px 0px;color: #FCA311;"></div>
+    </footer>
+
+    <footer class="footer-basic">
+        <div class="social"><a href="#" style="color: #FCA311;border-color: #FCA311;"><i class="icon ion-social-facebook"></i></a><a href="#" style="border-color: #FCA311;"><i class="icon ion-social-github" style="color: #FCA311;border-color: #FCA311;"></i></a></div>
+        <p class="copyright" style="font-family: Montserrat, sans-serif;color: #FCA311;font-weight: bold;font-size: 17px;">Masters of Code © 2021</p>
+    </footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+    <script src="assets/js/smoothproducts.min.js"></script>
+    <script src="assets/js/Animated-Filterable-Gallery.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/Animated-Filterable-Gallery-1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
+    <script src="assets/js/Simple-Slider.js"></script>
+    <script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
+	<script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
+	<script src="/assets/js/portafolio.js"></script>
+    <script src="assets/js/postProyecto.js"></script>
+    <script src="assets/js/isLoged.js"></script>
+</body>
+
+</html>

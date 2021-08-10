@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Product - Brand</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,400i,600,700">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="assets/css/Animated-Filterable-Gallery.css">
+    <link rel="stylesheet" href="assets/css/Bootstrap-4---Photo-Gallery.css">
+    <link rel="stylesheet" href="assets/css/Brands.css">
+    <link rel="stylesheet" href="assets/css/cards.css">
+    <link rel="stylesheet" href="assets/css/Features-Boxed.css">
+    <link rel="stylesheet" href="assets/css/Footer-Basic.css">
+    <link rel="stylesheet" href="assets/css/Footer-Dark.css">
+    <link rel="stylesheet" href="assets/css/Footer-with-social-media-icons.css">
+    <link rel="stylesheet" href="assets/css/Hover-Effect-Style-Demo---2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/Lightbox-Gallery.css">
+    <link rel="stylesheet" href="assets/css/Ludens-Users---3-Profile.css">
+    <link rel="stylesheet" href="assets/css/Projects-Clean.css">
+    <link rel="stylesheet" href="assets/css/Recipe-Card.css">
+    <link rel="stylesheet" href="assets/css/Simple-Slider.css">
+    <link rel="stylesheet" href="assets/css/smoothproducts.css">
+    <link rel="stylesheet" href="assets/css/Social-Icons.css">
+    <link rel="stylesheet" href="assets/css/Timeline.css">
+    <link rel="stylesheet" href="assets/css/estrellas.css">
+</head>
+
+<body>
+<!-- navbar -->
+<nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark" id="mainNav">
+    <div class="container"><button data-toggle="collapse" data-target="#navbarResponsive"
+            class="navbar-toggler navbar-toggler-right" type="button" aria-controls="navbarResponsive"
+            aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+        <div class="collapse navbar-collapse" id="navbarResponsive"><a href="/index.html"><img
+                    src="assets/img/logoWhite.png" style="width: 125px;height: 50px;"></a>
+            <ul class="navbar-nav ml-auto text-uppercase">
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services"></a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/planes.html">planes</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger"
+                        href="/catalogo-proyectos.html">Proyectos</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/lista-blogs.html">Blog</a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/equipo.html">Equipo</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/lista-trabajos.html">Trabajo Freelance</a></li>
+            </ul>
+        </div>
+        <button class="btn btn-primary" id="demo" type="button" style="background: #FCA311;border-style: none;"
+            data-toggle="modal" data-target="#exampleModal"><i class="fa fa-shopping-cart"></i> <span id="sum"></span> </button>
+    </div>
+</nav>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"><i class="fa fa-shopping-cart"> </i> Tus compras </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Carrito -->
+                <ul id="carrito" class="list-group "></ul>
+                 <hr>
+            </div>
+            <div class="modal-footer">
+                <!-- Precio total -->
+            <button id="boton-vaciar" class="btn btn-danger" style="background-color: gray; border-color: gray;">Vaciar</button>
+            <a href="detalle-pago.html"><button class="btn btn-success" style="background: #FCA311; border-color: #FCA311;">Pagar</button></a>
+            <p class="text-right">Total:$ <span id="total"></span></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Tarjeta sobre detalles del producto -->
+    <main class="page product-page">
+        <section class="clean-block clean-product dark" style="padding-bottom: 2px;">
+            <div class="container mt-5" style="background: #ffffff;">
+                <div class="block-heading">
+                    <h1 style="color: #FCA311;font-family: Montserrat, sans-serif;font-weight: bold;">DETALLE DE PROYECTOS</h1>
+                    <p style="font-family: Montserrat, sans-serif;">¿TE GUSTÓ UN PROYECTO? ¡CONÓCELO MÁS A FONDO!</p>
+                </div>
+                <div class="block-content" style="padding-bottom: 0px;">
+                    <div class="product-info">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="gallery" style="color: #ffffff;">
+                                    <div class="sp-wrap"><a href="assets/img/PRO.png"><img class="img-fluid d-block mx-auto" src="assets/img/PRO.png"></a><a href="assets/img/PRO.png"><img class="img-fluid d-block mx-auto" src="assets/img/PRO.png"></a><a href="assets/img/PRO.png"><img class="img-fluid d-block mx-auto" src="assets/img/PRO.png"></a></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="info">
+                                    <h3 style="font-family: Montserrat, sans-serif;color: #FCA311;font-weight: bold;">Página Web Responsiva</h3>
+                                    <div class="rating"><img src="assets/img/star.svg"><img src="assets/img/star.svg"><img src="assets/img/star.svg"><img src="assets/img/star-half-empty.svg"><img src="assets/img/star-empty.svg"></div>
+                                    <div class="price">
+                                        <h3 style="font-family: Montserrat, sans-serif;">$800.00</h3>
+                                    </div><a href="/carrito-compras.html"><button class="btn btn-primary" type="button" style="background: #FCA311;border-bottom-style: none;border-bottom-color: #FCA311;font-family: Montserrat, sans-serif;font-weight: bold;"><i class="icon-basket"></i>Añadir al carrito</button></a>
+                                    <div class="summary">
+                                        <p style="font-family: Montserrat, sans-serif;font-size: 16px;">Página web responsiva maquetada con HTML, CSS y BOOTSTRAP. Puede adaptarse a cualquier tipo de negocio ya que cuenta con: carrito de compra, registro de usuarios, detalle de productos y una landing page para promociones.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div>
+                            <ul class="nav nav-tabs" role="tablist" id="myTab">
+                                <li class="nav-item" role="presentation"><a class="nav-link active" role="tab" data-toggle="tab" id="description-tab" href="#description" style="font-weight: bold;font-family: Montserrat, sans-serif;">Descripción</a></li>
+                                <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-toggle="tab" id="specifications-tabs" href="#specifications" style="color: #FCA311;font-weight: bold;font-family: Montserrat, sans-serif;">Especificaciones</a></li>
+                                <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-toggle="tab" id="reviews-tab" href="#reviews" style="color: #FCA311;font-weight: bold;font-family: Montserrat, sans-serif;">Reseñas</a></li>
+                            </ul>
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active description" role="tabpanel" id="description">
+                                    <p style="font-family: Montserrat, sans-serif;"><br>Página web responsiva maquetada con HTML, CSS y BOOTSTRAP. Puede adaptarse a cualquier tipo de negocio ya que cuenta con: carrito de compra, registro de usuarios, detalle de productos y una landing page para promociones.<br><br></p>
+                                    <div class="row">
+                                        <div class="col-md-5" style="padding-top: 50px;">
+                                            <figure class="figure"></figure><img class="img-fluid" src="assets/img/tech/proyecto10.jpg">
+                                        </div>
+                                        <div class="col-md-7">
+                                            <h1 style="font-family: Montserrat, sans-serif;font-size: 25px;color: #FCA311;font-weight: bold;padding-top: 60px;">Pantallas</h1>
+                                            <p style="font-family: Montserrat, sans-serif;">La página cuenta con 4 pantallas: landing page, carrito de compras, detalle de productos y registro de usuarios.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-7 ">
+                                            <h1 style="font-family: Montserrat, sans-serif;font-size: 25px;color: #FCA311;font-weight: bold;padding-top: 60px;">Responsividad</h1>
+                                            <p style="font-family: Montserrat, sans-serif;">La página es responsiva gracias a que fue maquetada con el framework "Bootstrap", por lo que podrás visualizarla desde cualquier dispositivo.</p>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <figure class="figure"><img class="img-fluid figure-img" src="assets/img/tech/proyecto10.jpg" style="padding-top: 40px;"></figure>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade specifications" role="tabpanel" id="specifications">
+                                    <div class="table-responsive table-bordered">
+                                        <table class="table table-bordered">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="stat">Maquetación</td>
+                                                    <td>HTML</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="stat">Estilos</td>
+                                                    <td>CSS</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="stat">Framework</td>
+                                                    <td>BootStrap</td>
+                                                </tr>
+                                                
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" role="tabpanel" id="reviews">
+                                    <!-- Formulario para escribir una reseña -->
+                                    <div class="reviews col-md-8">
+                                        <!-- Boton de modal -->
+                                        <button type="button" class="btn btn-block" data-toggle="modal" data-target="#reseñamodal" style="background-color: #FCA311; color: #ffffff;font-family: Montserrat, sans-serif;font-weight: 600;">
+                                            Escribe tu reseña
+                                          </button>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="reseñamodal" tabindex="-1" aria-labelledby="reseñamodalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="reseñamodalLabel">Escribe tu reseña</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form id="form" style="border-top-color: #FCA311;">
+                                                            <div class="rating border form-group p-2">
+                                                                <span id="1estrella" class="reseña-estrella fa fa-star" onclick="calificar(this)"></span>
+                                                                <span id="2estrella" class="reseña-estrella fa fa-star" onclick="calificar(this)"></span>
+                                                                <span id="3estrella" class="reseña-estrella fa fa-star" onclick="calificar(this)"></span>
+                                                                <span id="4estrella" class="reseña-estrella fa fa-star" onclick="calificar(this)"></span>
+                                                                <span id="5estrella" class="reseña-estrella fa fa-star" onclick="calificar(this)"></span>
+                                                                <small class="form-text text-muted">Selecciona la calificación que le das al proyecto</small>
+                                                            </div>
+                                                            <div class="form-group">
+                                                            <input type="text" class="form-control" id="resumen" placeholder="Resumen">
+                                                            <small class="form-text text-muted">Resumen de tu opinion. Por ejemplo: La mejor compra de mi vida</small>
+                                                            </div>
+                                                            <div class="form-group">
+                                                            <textarea class="col-12" name="reseña-texto" id="opinion" placeholder="Tu reseña"></textarea>
+                                                            <small class="form-text text-muted">Tu opinion de sobre el proyecto</small>
+                                                            </div>
+                                                            <div class="modal-footer justify-content-center">
+                                                            <button type="button" class="btn" data-dismiss="modal" style="background-color: #343A40; color: #ffffff;font-family: Montserrat, sans-serif;font-weight: 500;">cerrar</button>
+                                                            <button type="submit" for class="btn" style="background-color: #FCA311; color: #ffffff;font-family: Montserrat, sans-serif;font-weight: 500;">Enviar</button>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                                    
+                                    <!-- Reseñas de usuarios -->
+                                    <div class="reviews">
+                                        <div class="review-item">
+                                            <div class="rating"><img src="assets/img/star.svg"><img src="assets/img/star.svg"><img src="assets/img/star.svg"><img src="assets/img/star.svg"><img src="assets/img/star-empty.svg"></div>
+                                            <h4>Es una buena opción para una página sencilla</h4><span class="text-muted"><a href="/perfil.html">Luis Bucio</a>, 27 Jul 2021</span>
+                                            <p>La página es muy sencilla de usar, me encantó que fuera responsiva y un agregado es la documentación que incluye. Encantado con la página.</p>
+                                        </div>
+                                    </div>
+                                    <div class="reviews">
+                                        <div class="review-item">
+                                            <div class="rating"><img src="assets/img/star.svg"><img src="assets/img/star.svg"><img src="assets/img/star.svg"><img src="assets/img/star.svg"><img src="assets/img/star-empty.svg"></div>
+                                            <h4>Buen producto, pero puede mejorar</h4><span class="text-muted"><a href="#">Juan Pérez</a>, 2 Jun 2021</span>
+                                            <p>Me gustó la página, pero en ocasiones parece muy sencilla. Creo que por el precio está bien.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clean-related-items ml-5 mr-5">
+                        <h3 style="font-family: Montserrat, sans-serif;color: #FCA311;font-weight: bold;">Productos Relacionados</h3>
+                        <div class="items">
+                            <div class="row justify-content-center">
+                                <div class="col-sm-6 col-lg-4">
+                                    <div class="clean-related-item">
+                                        <div class="image"><a href="#"><img class="img-fluid d-block mx-auto" src="assets/img/tech/PRO4.png"></a></div>
+                                        <div class="related-name"><a href="#" style="font-family: Montserrat, sans-serif;font-weight: bold;font-size: 20px;">Página Web Responsiva</a>
+                                            <div class="rating"><img src="assets/img/star.svg"><img src="assets/img/star.svg"><img src="assets/img/star.svg"><img src="assets/img/star-half-empty.svg"><img src="assets/img/star-empty.svg"></div>
+                                            <p style="color: #FCA311;font-family: Montserrat, sans-serif;font-weight: bold;font-size: 20px;">$800</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-4">
+                                    <div class="clean-related-item">
+                                        <div class="image"><a href="#"><img class="img-fluid d-block mx-auto" src="assets/img/tech/PRO3.png"></a></div>
+                                        <div class="related-name"><a href="#" style="font-family: Montserrat, sans-serif;font-weight: bold;font-size: 20px;">App Android</a>
+                                            <div class="rating"><img src="assets/img/star.svg"><img src="assets/img/star.svg"><img src="assets/img/star.svg"><img src="assets/img/star-half-empty.svg"><img src="assets/img/star-empty.svg"></div>
+                                            <p style="color: #FCA311;font-size: 20px;font-family: Montserrat, sans-serif;font-weight: bold;">$1500</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-4">
+                                    <div class="clean-related-item">
+                                        <div class="image"><a href="#"><img class="img-fluid d-block mx-auto" src="assets/img/tech/PRO6.png"></a></div>
+                                        <div class="related-name"><a href="#" style="font-family: Montserrat, sans-serif;font-weight: bold;font-size: 20px;">App iOS</a>
+                                            <div class="rating"><img src="assets/img/star.svg"><img src="assets/img/star.svg"><img src="assets/img/star.svg"><img src="assets/img/star-half-empty.svg"><img src="assets/img/star-empty.svg"></div>
+                                            <p style="color: #FCA311;font-size: 20px;font-family: Montserrat, sans-serif;font-weight: bold;">$800</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="footer-basic">
+        <div class="social"><a href="#" style="color: #FCA311;border-color: #FCA311;"><i class="icon ion-social-facebook"></i></a><a href="#" style="border-color: #FCA311;"><i class="icon ion-social-github" style="color: #FCA311;border-color: #FCA311;"></i></a></div>
+        <p class="copyright" style="font-family: Montserrat, sans-serif;color: #FCA311;font-weight: bold;font-size: 17px;">Masters of Code © 2021</p>
+    </footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+    <script src="assets/js/smoothproducts.min.js"></script>
+    <script src="assets/js/Animated-Filterable-Gallery.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/Animated-Filterable-Gallery-1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
+    <script src="assets/js/Simple-Slider.js"></script>
+    <script src="assets/js/reseña-estrellas.js"></script>
+    <script src="assets/js/postResena.js"></script>
+</body>
+
+</html>

@@ -107,6 +107,7 @@ window.onload = function () {
             // Imagen
             const miNodoImagen = document.createElement('img');
             miNodoImagen.classList.add('img-fluid');
+            miNodoImagen.style.width = "300px"
             miNodoImagen.setAttribute('src', info.imagen);
             // Precio
             const miNodoPrecio = document.createElement('p');
@@ -196,7 +197,7 @@ window.onload = function () {
             miNodo.textContent = `${numeroUnidadesItem} x ${miItem[0].nombre} - $${miItem[0].precio}`;
             // Boton de borrar
             const miBoton = document.createElement('button');
-            miBoton.classList.add('btn', 'btn-danger', 'mx-5');
+            miBoton.classList.add('btn', 'btn-dark', 'mx-5');
             miBoton.textContent = 'X';
             miBoton.style.marginLeft = '1rem';
             miBoton.dataset.item = item;

@@ -15,19 +15,29 @@ formRegistro.addEventListener("submit", (e) => {
 
     // Comprobación y alerts para los campos
     if(email.value == '') {
-        alert("El campo email no puede estar vacío");
+        swal({
+            text: "El campo email no puede estar vacio",
+          })   
     }
     if(password.value == '') {
-        alert("El campo password no puede estar vacío");
+        swal({
+            text: "El campo password no puede estar vacio",
+          }) 
     }
     if(nombre.value == '') {
-        alert("El campo nombre no puede estar vacío");
+        swal({
+            text: "El campo nombre no puede estar vacio",
+          }) 
     }
     if(rol == 'Selecciona tu rol:') {
-        alert("Seleccione su rol");
+        swal({
+            text: "Selecciona tu rol",
+          }) 
     }
     if(estado == 'Selecciona tu estado:') {
-        alert("Seleccione su estado");
+        swal({
+            text: "Selecciona tu estado",
+          }) 
     }
 
     // Peticion fetch
@@ -48,10 +58,14 @@ formRegistro.addEventListener("submit", (e) => {
             }
         }).then(function(response) {
             if (response.status = 200) {
-                alert("registro valido, ya puedes iniciar sesion");
+                swal({
+                    text: "Registro válido, ya puedes iniciar sesión",
+                  }) 
                 location.href = "login.html";
             } else {
-                alert("Favor de hacer un registro valido");
+                swal({
+                    text: "Favor de hacer un registro válido",
+                  }) 
             }
         });
     }

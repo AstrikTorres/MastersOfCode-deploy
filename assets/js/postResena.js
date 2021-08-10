@@ -7,13 +7,19 @@ form.addEventListener('submit', (e) => {
 
     // Comprobación y alerts para los campos
     if(calificacion == undefined) {
-        alert('Debe seleccionar una calificación');
+        swal({
+            text: "Error, debe seleccionar una calificación",
+          })  
     }
     if(resumen == '') {
-        alert('Debe introducir un resumen');
+        swal({
+            text: "Error, debe ingresar un resumen",
+          })  
     }
     if(opinion == '') {
-        alert('Debe introducir una opinion');
+        swal({
+            text: "Error, debe ingresar una opinión",
+          })   
     }
 
     // Peticion fetch
@@ -36,10 +42,14 @@ form.addEventListener('submit', (e) => {
         })// Recarga la pagina
         .then(response => {
             if (response.status = 200) {
-                alert('Reseña creada con exito');
+                swal({
+                    text: "Reseña creada con éxito",
+                  })   
                 location.reload();
             } else {
-                alert('Error con el servidor, una disculpa');
+                swal({
+                    text: "Error con el servidor, una disculpa",
+                  })   
             }
         })
     }

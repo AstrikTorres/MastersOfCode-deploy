@@ -7,11 +7,15 @@ formLogin.addEventListener("submit", (e) => {
     const password = document.querySelector("#password");
 
     if(email.value == '') {
-        alert("ingresa un email")
+        swal({
+            text: "Ingresa tu email",
+          })
     }
 
     if(password.value == '') {
-        alert("ingresa una contraseña")
+        swal({
+            text: "Ingresa tu contraseña",
+          })
     }
 
     if (email.value != '' && password.value != '') {
@@ -37,8 +41,10 @@ formLogin.addEventListener("submit", (e) => {
 
                 location.href = path + "mi-perfil.html";
             } else {
-                localStorage.removeItem("token");            
-                alert("Error, favor de ingresar un email y un password validos");
+                localStorage.removeItem("token");  
+                swal({
+                    text: "Error, favor de ingresar un email y un password validos",
+                  })          
             }
             
         })

@@ -1,6 +1,6 @@
 // Recupera los datos del usuario logeado y los devuelve en el dom
 let imagen;
-const usuarioImagen = document.getElementById('usuarioImagen');
+const usuarioImagen = "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png";
 const usuarioNombre = document.getElementById('usuarioNombre');
 const usuarioAcerca = document.getElementById('usuarioAcerca');
 

@@ -3,7 +3,7 @@ const btnDeleteUser = document.querySelector('#btnDeleteUser');
 btnDeleteUser.addEventListener('click', function (e) {
     let confirmar = confirm('¿Esta seguro de que desea eliminar este usuario?');
     if (confirmar) {
-        fetch('http://localhost:8080/user/' + userId, {
+        fetch('https://masters-of-code-back.herokuapp.com/user/' + userId, {
             method: 'DELETE',
             headers: {
                 'Authorization': token,

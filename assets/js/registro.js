@@ -33,7 +33,7 @@ formRegistro.addEventListener("submit", (e) => {
     // Peticion fetch
     if (email.value != '' && password.value != '' && nombre.value != '') {
     
-        fetch('http://localhost:8080/users/', {
+        fetch('https://masters-of-code-back.herokuapp.com/users/', {
             method: "POST",
             body: JSON.stringify({
                 username: email.value,

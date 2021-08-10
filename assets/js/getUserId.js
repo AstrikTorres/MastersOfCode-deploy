@@ -1,7 +1,7 @@
 // Recupera el Id del usuario logeado y  lo guarda en la variable global userId
 
 let userId;
-fetch('http://localhost:8080/user/auth', {
+fetch('https://masters-of-code-back.herokuapp.com/user/auth', {
     method: 'GET',
     headers: {
         'Authorization': token,

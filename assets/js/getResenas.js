@@ -1,7 +1,7 @@
 resultados = [];
 const reviews = document.querySelector('#reseñas');
 token = localStorage.getItem('token');
-fetch('http://localhost:8080/resenas', {
+fetch('https://masters-of-code-back.herokuapp.com/resenas', {
     method: 'GET',
     headers: {
         'Content-Type': 'application/json',

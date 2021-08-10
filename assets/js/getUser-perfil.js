@@ -16,7 +16,7 @@ const experienciaPuesto = document.getElementById('experienciaPuesto');
 const experienciaEmpresa = document.getElementById('experienciaEmpresa');
 const experienciaDescripcion = document.getElementById('experienciaDescripcion');
 
-fetch('http://localhost:8080/user/auth', {
+fetch('https://masters-of-code-back.herokuapp.com/user/auth', {
     method: 'GET',
     headers: {
         'Authorization': token,

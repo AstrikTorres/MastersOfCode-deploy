@@ -19,7 +19,7 @@ form.addEventListener('submit', (e) => {
     // Peticion fetch
     if (resumen != '' && opinion != '') {
     
-        fetch('http://localhost:8080/resenas', {
+        fetch('https://masters-of-code-back.herokuapp.com/resenas', {
             method: "POST",
             body: JSON.stringify({
                 resumen: resumen,
@@ -33,6 +33,9 @@ form.addEventListener('submit', (e) => {
                 'Authorization': token,
                 'Content-Type': "application/json"
             }
+        })// Recarga la pagina
+        .then(response => {
+                location.reload();
         })
     }
 });

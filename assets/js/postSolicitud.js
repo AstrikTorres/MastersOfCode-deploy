@@ -22,7 +22,7 @@ form.addEventListener('submit', (e) => {
     // Peticion fetch
     if (titulo != '' && descripcion != '') {
             
-        fetch('http://localhost:8080/solicitudes', {
+        fetch('https://masters-of-code-back.herokuapp.com/solicitudes', {
             method: "POST",
             body: JSON.stringify({
                 nombre: titulo,

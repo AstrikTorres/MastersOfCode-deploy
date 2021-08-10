@@ -16,7 +16,7 @@ formLogin.addEventListener("submit", (e) => {
 
     if (email.value != '' && password.value != '') {
     
-        fetch('http://localhost:8080/login', {
+        fetch('https://masters-of-code-back.herokuapp.com/login', {
             method: "POST",
             body: JSON.stringify({
                 username: email.value,

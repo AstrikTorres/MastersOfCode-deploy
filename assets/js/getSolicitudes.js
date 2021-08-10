@@ -2,7 +2,7 @@
 resultados = [];
 const cardBody = document.querySelector('#cards');
 token = localStorage.getItem('token');
-fetch('http://localhost:8080/solicitudes/recientes', {
+fetch('https://masters-of-code-back.herokuapp.com/solicitudes/recientes', {
     method: 'GET',
     headers: {
         'Content-Type': 'application/json',

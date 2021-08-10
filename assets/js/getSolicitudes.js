@@ -2,7 +2,7 @@
 resultados = [];
 const cardBody = document.querySelector('#cards');
 token = localStorage.getItem('token');
-fetch('https://masters-of-code-back.herokuapp.com/solicitudes/recientes', {
+fetch('http://localhost:8080/solicitudes/recientes', {
     method: 'GET',
     headers: {
         'Content-Type': 'application/json',
@@ -11,7 +11,7 @@ fetch('https://masters-of-code-back.herokuapp.com/solicitudes/recientes', {
 .then(data => {
     data.forEach(function (solicitud) {
         resultados += `
-    <div class="card" style="width: 18rem;">
+    <div class="card mb-5" style="width: 18rem;">
         <div class="card-body">
             <h3 class="card-title">${solicitud.nombre}</h3><br>
             <h6 class="card-subtitle mb-2 text-muted">Solicita: Roberto Martínez</h6>

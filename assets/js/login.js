@@ -16,7 +16,7 @@ formLogin.addEventListener("submit", (e) => {
 
     if (email.value != '' && password.value != '') {
     
-        fetch('https://masters-of-code-back.herokuapp.com/login', {
+        fetch('http://localhost:8080/login', {
             method: "POST",
             body: JSON.stringify({
                 username: email.value,
@@ -35,7 +35,7 @@ formLogin.addEventListener("submit", (e) => {
                 url = window.location;
                 const path = url.pathname.substring(0, url.pathname.lastIndexOf('/') + 1);
 
-                location.href = path + "index.html";
+                location.href = path + "mi-perfil.html";
             } else {
                 localStorage.removeItem("token");            
                 alert("Error, favor de ingresar un email y un password validos");

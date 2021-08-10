@@ -19,12 +19,15 @@ form.addEventListener('submit', (e) => {
     // Peticion fetch
     if (resumen != '' && opinion != '') {
     
-        fetch('https://masters-of-code-back.herokuapp.com/resenas', {
+        fetch('http://localhost:8080/resenas', {
             method: "POST",
             body: JSON.stringify({
                 resumen: resumen,
                 opinion: opinion,
-                calificacion: calificacion
+                calificacion: calificacion,
+                usuarios: {
+                    id: userId
+                }
             }),
             headers: {
                 'Authorization': token,

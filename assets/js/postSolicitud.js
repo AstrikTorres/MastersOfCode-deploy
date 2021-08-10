@@ -1,6 +1,6 @@
 token = localStorage.getItem('token');
 const form = document.querySelector('#form');
-
+    
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     let selectPresupuesto = document.querySelector("[name='presupuesto']");
@@ -21,13 +21,16 @@ form.addEventListener('submit', (e) => {
 
     // Peticion fetch
     if (titulo != '' && descripcion != '') {
-    
-        fetch('https://masters-of-code-back.herokuapp.com/solicitudes', {
+            
+        fetch('http://localhost:8080/solicitudes', {
             method: "POST",
             body: JSON.stringify({
                 nombre: titulo,
                 descripcion: descripcion,
                 presupuesto: presupuesto,
+                usuarios: {
+                    id: userId
+                }
             }),
             headers: {
                 'Authorization': token,

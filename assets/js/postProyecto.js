@@ -27,14 +27,17 @@ formPublicar.addEventListener('submit', (e) => {
     // Peticion fetch
     if (titulo != '' && descripcion != '') {
     
-        fetch('https://masters-of-code-back.herokuapp.com/proyectos', {
+        fetch('http://localhost:8080/proyectos', {
             method: "POST",
             body: JSON.stringify({
                 titulo: titulo,
                 descripcion: descripcion,
                 precio: precio,
                 categoria: categoria,
-                imagen: imagen
+                imagen: imagen,
+                usuarios: {
+                    id: userId
+                }
             }),
             headers: {
                 'Authorization': token,
